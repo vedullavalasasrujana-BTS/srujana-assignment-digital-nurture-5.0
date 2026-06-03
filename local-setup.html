@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Local Setup Example</title>
+  <link href="bootstrap-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-dist/icons/bootstrap-icons.css" rel="stylesheet">
+  <style>body { padding: 2rem; }</style>
+</head>
+<body>
+  <h1>Bootstrap Local Setup</h1>
+  <p>This page loads Bootstrap from the local <code>bootstrap-dist</code> folder.</p>
+
+  <section class="mb-4">
+    <h2>Downloaded Bootstrap Structure</h2>
+    <ul>
+      <li><code>bootstrap-dist/css/bootstrap.min.css</code> — compiled CSS file</li>
+      <li><code>bootstrap-dist/js/bootstrap.bundle.min.js</code> — JS bundle with plugins</li>
+      <li><code>bootstrap-dist/icons/bootstrap-icons.css</code> — optional icon styles</li>
+    </ul>
+  </section>
+
+  <section class="mb-4">
+    <h2>Responsive Grid Example</h2>
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-12 col-sm-6 col-lg-4"><div class="p-3 bg-primary text-white rounded">Column 1</div></div>
+        <div class="col-12 col-sm-6 col-lg-4"><div class="p-3 bg-secondary text-white rounded">Column 2</div></div>
+        <div class="col-12 col-sm-6 col-lg-4"><div class="p-3 bg-success text-white rounded">Column 3</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Local JavaScript Plugins</h2>
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#localModal">Open Modal</button>
+    <div class="modal fade" id="localModal" tabindex="-1" aria-labelledby="localModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="localModalLabel">Local Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">This modal uses local Bootstrap JavaScript from <code>bootstrap-dist/js/bootstrap.bundle.min.js</code>.</div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-5">
+    <p>Use this page after downloading Bootstrap assets into the <code>bootstrap-dist</code> folder.</p>
+  </footer>
+
+  <script src="bootstrap-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
