@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Community Event Portal</title>
+  <!-- Include Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-- Embedded internal CSS for body background -->
+  <style>
+    body {
+      background: #f1f6fa url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="mainHeader" class="banner">
+    <h1 style="color: red;">Community Event Portal</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#events">Events</a></li>
+        <li><a href="#bulletin">Bulletin</a></li>
+        <li><a href="#admin">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <h2>Welcome to Local City Events</h2>
+      <p class="description">Discover neighborhood gatherings, volunteer opportunities, and city meetings all in one portal.</p>
+    </section>
+
+    <section id="events" class="eventCard">
+      <h3>Upcoming Event Highlights</h3>
+      <p>Join us for outdoor concerts, art fairs, and community cleanups designed for every age group.</p>
+      <ul>
+        <li>Spring Market on Main Street</li>
+        <li>Volunteer park restoration</li>
+        <li>Neighborhood movie night</li>
+      </ul>
+    </section>
+
+    <section class="news-article">
+      <h2>Community Bulletin</h2>
+      <div class="news-columns">
+        <article>
+          <h3>City Council Updates</h3>
+          <p>The council approved new public space improvements, including benches, murals, and expanded bike lanes.</p>
+        </article>
+        <article>
+          <h3>Free Workshop Series</h3>
+          <p>Residents can register for free workshops on composting, digital skills, and family budgeting this summer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="admin" class="admin-table">
+      <h2>Events Admin Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Music in the Park</td>
+            <td>June 18</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Food Truck Rally</td>
+            <td>July 2</td>
+            <td>Limited</td>
+          </tr>
+          <tr>
+            <td>Volunteer Clean-Up</td>
+            <td>July 12</td>
+            <td>Open</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="contact-form">
+      <h2>Register Interest</h2>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com">
+
+        <label for="event">Choose Event</label>
+        <select id="event">
+          <option>Music in the Park</option>
+          <option>Food Truck Rally</option>
+          <option>Volunteer Clean-Up</option>
+        </select>
+
+        <button class="cta-button" type="submit">Join the Community</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
